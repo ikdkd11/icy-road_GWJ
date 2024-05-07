@@ -16,7 +16,7 @@ from datetime import datetime
 from PIL import Image
 from folium.plugins import DualMap
 from branca.colormap import LinearColormap
-import mapp5
+import mapp_main
 
 st.set_page_config(
     page_title="결빙관측 대시보드",
@@ -24,15 +24,12 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )#fd
-st.header('2024년 2번국도(보성(초당교차로)~광양(마룡교)) 결빙관측 관측회차 별 분석정보', divider='rainbow') 
-vis_trade_rent1 = tot2.grp2
-trade_count1 = tot2.grp4
-trade_mean1 = tot2.grp3            
-trade_mean_map1 = tot2.grp1
-mmap1 = mapp5.map61
-mmap2 = mapp5.map62
-mmap3 = mapp5.map63
-mmap4 = mapp5.map64
+st.header('2024년 광주광역시 첨단(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보', divider='rainbow') 
+grpp1 = tot2.grp1
+grpp2 = tot2.grp2
+mmap1 = mapp_main.mapm1
+mmap2 = mapp_main.mapm2
+
 
 
 # CSS를 이용하여 우측 상단에 텍스트를 고정시키는 HTML 코드
@@ -54,7 +51,7 @@ css_style = """
 html(css_style)
 
 
-tab1, tab2, tab3, tab4 = st.tabs(["1차 관측", "2차 관측", "3차 관측", "4차 관측"])
+tab1, tab2 = st.tabs(["1차 관측", "2차 관측"])
 with tab1:
 # 첫 번째 차트
     st.subheader('1월 10일 16시 발표 : 예보 중점 사항')
@@ -71,7 +68,7 @@ with tab1:
         3. 1월 10일 총 일사량 : 8.74 MJ/m^2, 평균 일조율 : 0.43hr
         '''
     )
-    st.plotly_chart(trade_mean_map1, use_container_width=True)
+    st.plotly_chart(grpp1, use_container_width=True)
     st.subheader('2번국도(보성(초당교차로)~광양(마룡교)) 1차관측 노면온도 정보 지도 시각화') 
     st.plotly_chart(mmap1, use_container_width=True)
 with tab2:
@@ -93,49 +90,9 @@ with tab2:
         '''
     )
     st.subheader('2번국도(보성(초당교차로)~광양(마룡교)) 2차관측 노면온도 시계열 그래프')
-    st.plotly_chart(vis_trade_rent1, use_container_width=True)
+    st.plotly_chart(grpp2, use_container_width=True)
     st.subheader('2번국도(보성(초당교차로)~광양(마룡교)) 2차관측 노면온도 정보 지도 시각화')
     st.plotly_chart(mmap2, use_container_width=True)   
-with tab3:
-# 세 번째 차트
-    st.subheader('1월 24일 16시 발표 : 특보 및 예보 중점 사항')
-    st.markdown(
-        '''
-        1. 강풍주의보: 보성, 여수, 광양 순천 등/ 풍랑주의보: 남해서부 전해상
-        2. 모레(26일) 아침까지 광주와 전남 대부분 지역에서 기온이 낮고, 바람도 강해 춥겠습니다.
-        3. 최근 눈이 쌓인 지역에서는 :red[빙판길]과 :red[도로 살얼음]이 나타나는 곳도 있겠습니다.
-        ''')
-    st.subheader("3차 관측 시기 기상관측 정보(18시 ~ 19시)")
-    st.markdown(
-        '''
-        1. 보성/순천/광양 평균 풍향풍속 : 보성 <NW, 5.5m/s>, 순천 <NW, 3.9m/s>, 광양 <WNW, 4.7m/s>.
-        2. 관측구간 내 평균 습도 : 53%
-        3. 1월 24일 총 일사량 : 13.86 MJ/m^2, 평균 일조율 : 0.86hr
-        '''
-    )
-    st.plotly_chart(trade_mean1, use_container_width=True)
-    st.subheader('2번국도(보성(초당교차로)~광양(마룡교)) 3차관측 노면온도 정보 지도 시각화')
-    st.plotly_chart(mmap3, use_container_width=True)
-with tab4:
-# 네 번째 차트
-    st.subheader('1월 25일 04시 발표 : 특보 및 예보 중점 사항')
-    st.markdown(
-        '''
-        1. 강풍주의보(06시 해제): 보성, 여수, 광양, 순천 / 풍랑주의보(06시 해제): 남해서부 전해상
-        2. 내일(26일) 아침까지 광주와 전남 대부분 지역에서 기온이 낮고, 바람도 강해 춥겠습니다.
-        3. 최근 눈이 쌓인 지역에서는 :red[빙판길]과 :red[도로 살얼음]이 나타나는 곳도 있겠습니다.
-        ''')
-    st.subheader("4차 관측 시기 기상관측 정보(06시 ~ 07시)")
-    st.markdown(
-        '''
-        1. 보성/순천/광양 평균 풍향풍속 : 보성 <WNW, 2.6m/s>, 순천 <SSE, 1.2m/s>, 광양 <NW, 3.1m/s>.
-        2. 관측구간 내 평균 습도 : 60%
-        3. 1월 24일 총 일사량 : 13.86 MJ/m^2, 평균 일조율 : 0.86hr
-        '''
-    )
-    st.plotly_chart(trade_count1, use_container_width=True)
-    st.subheader('2번국도(보성(초당교차로)~광양(마룡교)) 4차관측 노면온도 정보 지도 시각화')
-    st.plotly_chart(mmap4, use_container_width=True)
 
 #5
 #st_folium(mmap1, width=1000)
