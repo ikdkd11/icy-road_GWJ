@@ -31,6 +31,7 @@ df55 = pd.read_csv(url5)
 df11_cleaned = df11.dropna()
 
 # plotly를 사용하여 그래프 그리기
+## 첫번째 위험구간 노면온도 그래프
 def create_graph(df11_cleaned):
     fig = go.Figure()
 
@@ -95,8 +96,8 @@ def create_graph(df11_cleaned):
     return fig
 grp11 = create_graph(df11_cleaned)
 
+##두번째 위험구간 노면온도 그래프
 # NaN 값을 가진 행 제거
-
 df22_cleaned = df22.dropna()
 
 def create_graph(df22_cleaned):
@@ -161,8 +162,8 @@ def create_graph(df22_cleaned):
     return fig
 grp22 = create_graph(df22_cleaned)
 
-##벌교대교
 
+## 세번째 위험구간 노면온도 그래프
 # NaN 값을 가진 행 제거
 df33_cleaned = df33.dropna()
 # plotly를 사용하여 그래프 그리기
@@ -230,7 +231,7 @@ def create_graph(df33):
     return fig
 grp33 = create_graph(df33)
 
-
+## 네번째 위험구간 노면온도 그래프
 df44_cleaned = df44.dropna()
 def create_graph(df44_cleaned):
 # plotly를 사용하여 그래프 그리기
@@ -293,6 +294,7 @@ def create_graph(df44_cleaned):
     return fig
 grp44 = create_graph(df44_cleaned)
 
+## 다섯번째 위험구간 노면온도 그래프
 df55_cleaned = df55.dropna()
 def create_graph(df55_cleaned):
     fig = go.Figure()
@@ -335,7 +337,7 @@ def create_graph(df55_cleaned):
         fig.add_trace(go.Scatter(
             mode='lines',
             x=df55_cleaned.index,  # 인덱스를 x축 데이터로 사용
-            y=df55_cleaned[f'노면온도({i}차)'],
+            y=df55_cleaned[f'노면온도({i}차)'],ㅇ
             name=f'노면온도({i}차)',
             line=dict(color=road_temp_colors[i-1], width=2),
             connectgaps=True
