@@ -9,11 +9,13 @@ url1 = "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-real
 url2 = "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/2-2.csv"
 url3 = "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/2-3.csv"
 url4 = "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/2-4.csv"
+url5 = ""
 
 df1 = pd.read_csv(url1)
 df2 = pd.read_csv(url2)
 df3 = pd.read_csv(url3)
 df4 = pd.read_csv(url4)
+df5 = pd.read_csv(url5)
 
 # 평균 위도와 경도 계산
 avg_lat1 = df1["위도"].mean()
