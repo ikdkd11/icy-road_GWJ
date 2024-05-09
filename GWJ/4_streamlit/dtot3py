@@ -353,5 +353,5 @@ def create_graph(df55_cleaned):
         yaxis=dict(title='온도(°C)'),
         hovermode="x"
     )
-    return fig흑산도
+    return fig
 grp55 = create_graph(df55_cleaned)
