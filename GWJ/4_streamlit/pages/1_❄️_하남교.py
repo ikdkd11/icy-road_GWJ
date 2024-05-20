@@ -58,9 +58,7 @@ with col1:
                  ['위험구간2(남해고속도로 교차점 - 옥전교) 위성사진',
                   '위험구간2(남해고속도로 교차점 - 옥전교) 도로교차지점 거리뷰',
                   '지도 시각화(1차 관측)',
-                  '지도 시각화(2차 관측)',
-                  '지도 시각화(3차 관측)',
-                  '지도 시각화(4차 관측)'
+                  '지도 시각화(2차 관측)'
                   ])
 image_url2 = (
     "https://github.com/ikdkd11/dashboard/blob/main/python-for-realestate-data-main/0_data/streamlit_data/%EC%98%A5%EC%A0%84%EA%B5%90.png?raw=true"
@@ -76,13 +74,9 @@ with col2:
     elif option == '위험구간2(남해고속도로 교차점 - 옥전교) 도로교차지점 거리뷰':
         st.image(image_url3)
     elif option == '지도 시각화(1차 관측)':
-        col2.plotly_chart(map2_1, height = 1080, use_container_width = True)
+        col2.plotly_chart(map1_1, height = 1080, use_container_width = True)
     elif option == '지도 시각화(2차 관측)':
-        col2.plotly_chart(map2_2, height = 1080, use_container_width = True)
-    elif option == '지도 시각화(3차 관측)':
-        col2.plotly_chart(map2_3, height = 1080, use_container_width = True)
-    elif option == '지도 시각화(4차 관측)':
-        col2.plotly_chart(map2_4, height = 1080, use_container_width = True)
+        col2.plotly_chart(map1_2, height = 1080, use_container_width = True)
         # map1은 사전에 정의한 지도 객체
         # 예: map1 = folium.Map(location=[45.372, -121.6972], zoom_start=12, tiles="Stamen Terrain")
         #st.map(map1)  # 'map1'을 미리 정의하고 해당 객체를 여기에 표시
