@@ -16,6 +16,7 @@ import requests
 from io import BytesIO
 import tot3
 import mapp1
+import mapp2
 import tta
 
 # CSS를 이용하여 우측 상단에 텍스트를 고정시키는 HTML 코드
@@ -42,11 +43,11 @@ grbp22 = tta.grbp2
 
 #1차 위험지역 지도 시각화 자료 호출
 map1_1 = mapp1.map11
-map1_2 = mapp1.map12
+map1_2 = mapp2.map21
 
 table2 = tta.average_temperatures2
 #1~5번째 위험지역 별 시계열 그래프
-grph2 = tot3.grp22
+grph = tot3.grp11
 
 #1~5번째 위험지역 별 박스그림
 box11 = plotbox.box1
@@ -82,7 +83,7 @@ with col2:
         #st.map(map1)  # 'map1'을 미리 정의하고 해당 객체를 여기에 표시
 st.subheader('위험구간2(남해고속도로 고각하부-옥전교) 1~4차 관측회차 별 시계열 그래프 및 박스그림                                                                               ')
 col1, col2 = st.columns([1,1])
-col1.plotly_chart(grph2, use_container_width = True)
+col1.plotly_chart(grph, use_container_width = True)
 with col2:
     tab1, tab2, tab3 = st.tabs(["Table", "Graph1", "Graph2"])
     with tab1:
