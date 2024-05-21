@@ -53,7 +53,7 @@ def create_graph(average_temperatures1):
     # Updating layout for clarity
     fig.update_layout(
         xaxis=dict(
-            title='구간 전체/저온구간 진입전/저온구간',
+            title='구간 전체/일반 구간/저온구간',
             title_font=dict(size=20),
             tickfont=dict(size=20)  # Adjusting x-axis title font size
         ),
@@ -80,6 +80,7 @@ def create_graph(average_temperatures1):
     return fig
     # Attempting to display the updated plot again
 grbp1 = create_graph(average_temperatures1)
+
 
 def create_graph(average_temperatures2):
     fig = px.line(average_temperatures2.reset_index(), x='구분', y=average_temperatures2.columns,
