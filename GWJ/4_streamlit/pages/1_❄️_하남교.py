@@ -23,9 +23,9 @@ import tta
 
 # 스트림릿 페이지에 HTML 컴포넌트 추가
 
-st.header('위험구간 두번째 - 옥전교', divider='rainbow')
-st.subheader('<옥전교(남해고속도로 고각하부 - 옥전교)>')
-st.write('주소: 전남 보성군 벌교읍 칠동리 옥전교')    
+st.header('저온구간 첫번째 - 하남교', divider='rainbow')
+st.subheader('<하남교> 총 길이 80m, 총 폭 39m, 높이 4.6m')
+st.write('주소: 광주광역시 광산구 장덕동, 도천동')    
 grbp22 = tta.grbp1
 
 #1차 위험지역 지도 시각화 자료 호출
