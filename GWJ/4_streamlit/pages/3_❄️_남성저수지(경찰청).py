@@ -20,9 +20,9 @@ import mapp2
 import tta
 
 
-st.header('위험구간 네번째 - 세풍대교', divider='rainbow')    
-st.subheader('<세풍대교 - 초남1교 - 초남터널>')
-st.write('주소: 전라남도 광양시 광양읍 초남리')    
+st.header('저온구간 세번째 - 남성저수지(용아로-금봉로)', divider='rainbow')    
+st.subheader('<남성저수지(광주광역시 경찰청) 주변 도로')
+st.write('주소: 광주광역시 용아로112(소촌동)')    
 
 map3_1 = mapp1.map13
 map3_2 = mapp2.map23
@@ -34,7 +34,7 @@ grph3 = tot3.grp33
 col1, col2 = st.columns([1,1])
 with col1:
     option = st.selectbox('표시 이미지 선택:',
-                 ['위험구간4(세풍대교-초남1교-초남터널) 위성사진',
+                 ['저온구간3 남성저수지 주변 도로 사진',
                   '지도 시각화(1차 관측)',
                   '지도 시각화(2차 관측)'
                   ])
