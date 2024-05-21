@@ -39,13 +39,13 @@ html(css_style)
 st.header('위험구간 두번째 - 옥전교', divider='rainbow')
 st.subheader('<옥전교(남해고속도로 고각하부 - 옥전교)>')
 st.write('주소: 전남 보성군 벌교읍 칠동리 옥전교')    
-grbp22 = tta.grbp2
+grbp22 = tta.grbp1
 
 #1차 위험지역 지도 시각화 자료 호출
 map1_1 = mapp1.map11
 map1_2 = mapp2.map21
 
-table2 = tta.average_temperatures2
+table2 = tta.average_temperatures1
 #1~5번째 위험지역 별 시계열 그래프
 grph = tot3.grp11
 
@@ -92,5 +92,5 @@ with col2:
     with tab2:
          st.plotly_chart(grbp22, use_container_width=True)
     with tab3:
-        st.plotly_chart(box22, use_container_width=True)
+        st.plotly_chart(grbp22, use_container_width=True)
 

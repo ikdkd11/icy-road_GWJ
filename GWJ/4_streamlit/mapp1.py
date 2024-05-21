@@ -1,5 +1,4 @@
 #첨단-극락교 1차 관측 중 저온구간에 대한 노면온도 지도 생성 기능
-
 import folium
 import pandas as pd
 import branca.colormap as cm
