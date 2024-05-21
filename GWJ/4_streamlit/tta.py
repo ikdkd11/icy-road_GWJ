@@ -63,7 +63,7 @@ def create_graph(average_temperatures1):
             tickfont=dict(size=20)  # Adjusting y-axis title font size
         ),
         legend_title='관측차수',
-        legend_title_font=dict(size=12),  # Adjusting legend title font size
+        legend_title_font=dict(size=11),  # Adjusting legend title font size
         margin=dict(l=50, r=50, t=40, b=30)
     )
 
@@ -75,8 +75,8 @@ def create_graph(average_temperatures1):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=12)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=12, color='black')  # Adjusting text size
+        trace.marker = dict(size=11)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=11, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp1 = create_graph(average_temperatures1)
@@ -99,7 +99,7 @@ def create_graph(average_temperatures2):
             tickfont=dict(size=20)  # Adjusting y-axis title font size
         ),
         legend_title='관측차수',
-        legend_title_font=dict(size=12),  # Adjusting legend title font size
+        legend_title_font=dict(size=11),  # Adjusting legend title font size
         margin=dict(l=50, r=50, t=40, b=30)
     )
 
@@ -111,8 +111,8 @@ def create_graph(average_temperatures2):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=12)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=12, color='black')  # Adjusting text size
+        trace.marker = dict(size=11)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=11, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp2 = create_graph(average_temperatures2)
@@ -134,7 +134,7 @@ def create_graph(average_temperatures3):
             tickfont=dict(size=20)  # Adjusting y-axis title font size
         ),
         legend_title='관측차수',
-        legend_title_font=dict(size=12),  # Adjusting legend title font size
+        legend_title_font=dict(size=11),  # Adjusting legend title font size
         margin=dict(l=50, r=50, t=40, b=30)
     )
 
@@ -146,8 +146,8 @@ def create_graph(average_temperatures3):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=12)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=12, color='black')  # Adjusting text size
+        trace.marker = dict(size=11)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=11, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp3 = create_graph(average_temperatures3)
@@ -169,7 +169,7 @@ def create_graph(average_temperatures4):
             tickfont=dict(size=20)  # Adjusting y-axis title font size
         ),
         legend_title='관측차수',
-        legend_title_font=dict(size=12),  # Adjusting legend title font size
+        legend_title_font=dict(size=11),  # Adjusting legend title font size
         margin=dict(l=50, r=50, t=40, b=30)
     )
 
@@ -181,8 +181,8 @@ def create_graph(average_temperatures4):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=12)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=12, color='black')  # Adjusting text size
+        trace.marker = dict(size=11)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=11, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp4 = create_graph(average_temperatures4)
@@ -204,7 +204,7 @@ def create_graph(average_temperatures5):
             tickfont=dict(size=20)  # Adjusting y-axis title font size
         ),
         legend_title='관측차수',
-        legend_title_font=dict(size=12),  # Adjusting legend title font size
+        legend_title_font=dict(size=11),  # Adjusting legend title font size
         margin=dict(l=50, r=50, t=40, b=30)
     )
 
@@ -216,8 +216,8 @@ def create_graph(average_temperatures5):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=12)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=12, color='black')  # Adjusting text size
+        trace.marker = dict(size=11)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=11, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp5 = create_graph(average_temperatures5)
