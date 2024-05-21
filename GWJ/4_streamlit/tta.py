@@ -75,8 +75,8 @@ def create_graph(average_temperatures1):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=15)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=15, color='black')  # Adjusting text size
+        trace.marker = dict(size=13)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=13, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp1 = create_graph(average_temperatures1)
@@ -111,8 +111,8 @@ def create_graph(average_temperatures2):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=15)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=15, color='black')  # Adjusting text size
+        trace.marker = dict(size=13)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=13, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp2 = create_graph(average_temperatures2)
@@ -146,8 +146,8 @@ def create_graph(average_temperatures3):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=15)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=15, color='black')  # Adjusting text size
+        trace.marker = dict(size=13)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=13, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp3 = create_graph(average_temperatures3)
@@ -181,8 +181,8 @@ def create_graph(average_temperatures4):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=15)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=15, color='black')  # Adjusting text size
+        trace.marker = dict(size=13)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=13, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp4 = create_graph(average_temperatures4)
@@ -216,8 +216,8 @@ def create_graph(average_temperatures5):
         trace.mode = 'lines+markers+text'
         trace.text = [f"{y}°C" for y in trace.y]
         trace.textposition = "top left"
-        trace.marker = dict(size=15)  # Keeping the marker size adjustment
-        trace.textfont = dict(size=15, color='black')  # Adjusting text size
+        trace.marker = dict(size=13)  # Keeping the marker size adjustment
+        trace.textfont = dict(size=13, color='black')  # Adjusting text size
     return fig
     # Attempting to display the updated plot again
 grbp5 = create_graph(average_temperatures5)
