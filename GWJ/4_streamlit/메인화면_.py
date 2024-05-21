@@ -30,42 +30,21 @@ grpp2 = tot2.grp2
 mmap1 = mapp_main.mapm1
 mmap2 = mapp_main.mapm2
 
-
-
-# CSS를 이용하여 우측 상단에 텍스트를 고정시키는 HTML 코드
-css_style = """
-<style>
-.fixed-top-right {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    padding: 8px;
-    z-index: 999;
-}
-</style>
-<div class="fixed-top-right">광주지방기상청 관측과 제공</div>
-"""
-
-# 스트림릿 페이지에 HTML 컴포넌트 추가
-html(css_style)
-
-
 tab1, tab2 = st.tabs(["1차 관측", "2차 관측"])
 with tab1:
 # 첫 번째 차트
-    st.subheader('1월 10일 16시 발표 : 예보 중점 사항')
+    st.subheader('1월 28일 17시 발표 : 예보 중점 사항')
     st.markdown(
         '''
-        1. 내일(11일) 새벽부터 오전 사이 내륙을 중심으로 :blue[짙은 안개]가 끼는 곳이 있겠습니다.
-        2.  :blue[내린 비]가 얼어 :red[도로 살얼음]이 나타나는 곳이 있겠습니다.
+        1. 모레까지 아침 기온 낮아 춥겠음, 낮/밤의 기온차 큼
+        2.  :blue[빙판길]과 :red[도로 살얼음] 주의
         ''')
-    st.subheader("1차 관측 시기 기상관측 정보(17시 ~ 19시)")
+    st.subheader("1월 29일 광주ASOS 기상관측 정보(06시/07시)")
     st.markdown(
         '''
-        1. 보성/순천/광양 평균 풍향풍속 : 보성 <WNW, 5.4m/s>, 순천 <NNW, 2.4m/s>, 광양 <N, 1.7m/s>.
-        2. 관측구간 내 평균 습도 : 56%
-        3. 1월 10일 총 일사량 : 8.74 MJ/m^2, 평균 일조율 : 0.43hr
+        06시 : 1. 기온 -1.4 °C, 2. 습도 89%, 3. 운량 하층운 9할, 4. 지면온도 -1.2 °C, 풍속 0.7m/s 
+        07시 : 1. 기온 -1.4 °C, 2. 습도 89%, 3. 운량 하층운 9할, 4. 지면온도 -1.2 °C, 풍속 0.7m/s 
+        전일(28일) 총 일사/ 평균 일조율 : 11.22 MJ/m^2, 64.4%
         '''
     )
     st.plotly_chart(grpp1, use_container_width=True)
