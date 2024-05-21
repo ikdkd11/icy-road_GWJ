@@ -2,11 +2,11 @@ import pandas as pd
 import plotly.express as px
 
 # CSV 파일을 읽어들입니다.
-url1 = 'https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot11.csv'
-url2 = "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot2.csv"
-url3 = "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot3.csv"
-url4 = "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot4.csv"
-url5 = "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot5.csv"
+url1 = 'https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low1.csv'
+url2 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low2.csv"
+url3 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low3.csv"
+url4 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low4.csv"
+url5 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low5.csv"
 
 data1 = pd.read_csv(url1)
 data2 = pd.read_csv(url2)
@@ -31,19 +31,18 @@ average_temperatures5 = data5.groupby(['구분', '차수'])['온도'].mean().uns
 
 # 구분 순서를 지정하고, 소수 첫째 자리까지 나오게 조정합니다.
 custom_order = ['구간 전체', '진입 전', '급락구간']
-custom_order3 = ['구간 전체', '벌교대교', '장양육교']
 average_temperatures1 = average_temperatures1.reindex(custom_order).round(1)
 average_temperatures2 = average_temperatures2.reindex(custom_order).round(1)
-average_temperatures3 = average_temperatures3.reindex(custom_order3).round(1)
+average_temperatures3 = average_temperatures3.reindex(custom_order).round(1)
 average_temperatures4 = average_temperatures4.reindex(custom_order).round(1)
 average_temperatures5 = average_temperatures5.reindex(custom_order).round(1)
 
 
-average_temperatures1.columns = ['1차 관측', '2차 관측', '3차 관측', '4차 관측']
-average_temperatures2.columns = ['1차 관측', '2차 관측', '3차 관측', '4차 관측']
-average_temperatures3.columns = ['1차 관측', '2차 관측', '3차 관측', '4차 관측']   
-average_temperatures4.columns = ['1차 관측', '2차 관측', '3차 관측', '4차 관측']
-average_temperatures5.columns = ['1차 관측', '2차 관측', '3차 관측', '4차 관측']
+average_temperatures1.columns = ['1차 관측', '2차 관측']
+average_temperatures2.columns = ['1차 관측', '2차 관측']
+average_temperatures3.columns = ['1차 관측', '2차 관측']   
+average_temperatures4.columns = ['1차 관측', '2차 관측']
+average_temperatures5.columns = ['1차 관측', '2차 관측']
 
 
 # Using plotly to generate the line graph
