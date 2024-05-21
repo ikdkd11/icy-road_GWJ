@@ -352,4 +352,8 @@ def create_graph(df55_cleaned):
     )
     return fig
 grp55 = create_graph(df55_cleaned)
-grp55.show()
+grp11.write_html('1.html')
+grp22.write_html('2.html')
+grp33.write_html('3.html')
+grp44.write_html('4.html')
+grp55.write_html('5.html')
