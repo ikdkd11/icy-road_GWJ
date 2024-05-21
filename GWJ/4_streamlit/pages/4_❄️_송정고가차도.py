@@ -19,8 +19,6 @@ import mapp1
 import mapp2
 import tta
 
-# CSS를 이용하여 우측 상단에 텍스트를 고정시키는 HTML 코드
-
 st.header('위험구간 다섯번째 - 수어천교', divider='rainbow')    
 st.subheader('<중군터널 - 신금1,2교 - 수어천교 - 마룡교>')
 st.write('주소: 전라남도 광양시 옥곡면 신금리')
@@ -57,7 +55,7 @@ with col2:
     tab1, tab2, tab3 = st.tabs(["Table", "Graph1", "Graph2"])
     with tab1:
        st.subheader('위험구간(옥전교) 중 최저 노면온도 기록구간 진입 전/후 평균 노면온도 비교')
-       st.table(table4.head(5))
+       #st.table(table4.head(5))
     with tab2:
          st.plotly_chart(table44, use_container_width=True)
     with tab3:
