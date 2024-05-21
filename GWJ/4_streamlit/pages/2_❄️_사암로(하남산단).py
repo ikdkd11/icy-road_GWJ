@@ -19,9 +19,9 @@ import mapp1
 import mapp2
 import tta
 
-st.header('위험구간 세번째 - 벌교대교', divider='rainbow')    
-st.subheader('<벌교대교 - 장양육교>')
-st.write('주소: 전남 보성군 벌교읍 장좌리 벌교대교, 전라남도 보성군 벌교읍 장양리 장양육교')  
+st.header('저온구간 두번째 - 사암로', divider='rainbow')
+st.subheader('<사암로> 총 길이 1.3km')
+st.write('주소: 광주광역시 광산구 장덕동')  
 
 map2_1 = mapp1.map12
 map2_2 = mapp2.map22
@@ -33,7 +33,7 @@ box22 = plotbox.box2
 col1, col2 = st.columns([1,1])
 with col1:
     option = st.selectbox('표시 이미지 선택:',
-                 ['위험구간3(벌교대교-장양육교) 위성사진',
+                 ['저온구간2(사암로) 정면 사진',
                   '지도 시각화(1차 관측)',
                   '지도 시각화(2차 관측)'
                   ])
