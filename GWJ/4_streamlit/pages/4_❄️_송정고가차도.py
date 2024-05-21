@@ -50,12 +50,12 @@ with col2:
         col2.plotly_chart(map4_2, height = 1080, use_container_width = True)
 
 col1, col2 = st.columns([1,1])
-col1.plotly_chart(table4, use_container_width = True)
+col1.plotly_chart(grph4, use_container_width = True)
 with col2:
     tab1, tab2, tab3 = st.tabs(["Table", "Graph1", "Graph2"])
     with tab1:
        st.subheader('위험구간(옥전교) 중 최저 노면온도 기록구간 진입 전/후 평균 노면온도 비교')
-       #st.table(table4.head(5))
+       st.table(table4.head(5))
     with tab2:
          st.plotly_chart(table44, use_container_width=True)
     with tab3:

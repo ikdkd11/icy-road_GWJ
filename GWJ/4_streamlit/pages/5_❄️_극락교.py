@@ -52,7 +52,7 @@ with col2:
         col2.plotly_chart(map5_2, height = 1080, use_container_width = True)
 
 col1, col2 = st.columns([1,1])
-col1.plotly_chart(table5, use_container_width = True)
+col1.plotly_chart(grph5, use_container_width = True)
 with col2:
     tab1, tab2, tab3 = st.tabs(["Table", "Graph1", "Graph2"])
     with tab1:
