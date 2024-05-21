@@ -57,7 +57,7 @@ def create_graph(df1):
     )
     return fig
 map11 = create_graph(df1)
-map11.show()
+
 def create_graph(df2):
     fig = go.Figure(go.Scattermapbox(
         lat=df2["위도"],
