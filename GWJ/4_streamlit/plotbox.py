@@ -2,21 +2,12 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
 
-url1 = (
-    "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot11.csv"
-)
-url2 = (
-    "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot2.csv"
-)
-url3 = (
-    "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot3.csv"
-)
-url4 = (
-    "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot4.csv"
-)
-url5 = (
-    "https://raw.githubusercontent.com/ikdkd11/dashboard/main/python-for-realestate-data-main/0_data/plot5.csv"
-)
+url1 = 'https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low1.csv'
+url2 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low2.csv"
+url3 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low3.csv"
+url4 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low4.csv"
+url5 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/low5.csv"
+
 # Load the CSV file to examine its content
 df1 = pd.read_csv(url1)
 df2 = pd.read_csv(url2)

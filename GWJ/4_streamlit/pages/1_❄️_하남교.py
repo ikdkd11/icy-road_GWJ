@@ -51,7 +51,6 @@ grph = tot3.grp11
 
 #1~5번째 위험지역 별 박스그림
 box11 = plotbox.box1
-box22 = plotbox.box2
 
 col1, col2 = st.columns([1,1])
 with col1:
@@ -92,5 +91,5 @@ with col2:
     with tab2:
          st.plotly_chart(grbp22, use_container_width=True)
     with tab3:
-        st.plotly_chart(grbp22, use_container_width=True)
+        st.plotly_chart(box11, use_container_width=True)
 
