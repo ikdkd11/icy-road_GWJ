@@ -79,3 +79,4 @@ def create_graph(df2):
     )
     return fig
 mapm2 = create_graph(df2)
+mapm1.show()
