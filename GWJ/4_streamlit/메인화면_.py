@@ -124,7 +124,7 @@ else:
             '''
         )
         st.plotly_chart(bgrpp1, use_container_width=True)
-        st.subheader('첨단(과기원)~극락교(송정)구간 1차 관측 노면온도 지도 시각화') 
+        st.subheader('일곡사거리(일곡지구)~조선대입구(동구청)구간 1차 관측 노면온도 지도 시각화') 
         st.plotly_chart(bmmap1, use_container_width=True)
     with tab2:
     # 두 번째 차트
@@ -142,7 +142,7 @@ else:
             '''
         )
         st.plotly_chart(bgrpp2, use_container_width=True)
-        st.subheader('일곡사거리(일곡지구)~조선대입구(동구청)구간 노면온도 지도 시각화')
+        st.subheader('일곡사거리(일곡지구)~조선대입구(동구청)구간 2차 관측 노면온도 지도 시각화')
         st.plotly_chart(bmmap2, use_container_width=True)   
 #5
 #st_folium(mmap1, width=1000)
