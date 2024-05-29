@@ -32,7 +32,7 @@ sig_area = st.sidebar.selectbox("관측경로 선택", sig_list)
 
 # Define the header text based on the selected route
 if sig_area == '구간A)첨단(과기원)-극락교(송정)':
-    header_text = '<구간A> 광주광역시 첨단(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보'
+    header_text = "<구간A> 광주광역시 첨단(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보"
 else:
     header_text = """
 <style>
