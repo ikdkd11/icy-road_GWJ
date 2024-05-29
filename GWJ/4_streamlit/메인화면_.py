@@ -35,7 +35,8 @@ if sig_area == '구간A)첨단지구(과기원)-극락교(송정)':
     header_text = """
                 <h2>
                 <구간A><br>
-                첨단지구(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보
+                첨단지구(과기원)~극락교(송정) 결빙관측<br>
+                관측회차 별 분석정보
                 </h2>
                 """
     st.markdown(header_text, unsafe_allow_html=True)
@@ -43,8 +44,8 @@ else:
     header_text = """
     <h2>
     <구간B><br>
-    일곡사거리(일곡지구)~조선대입구(동구청)<br> 
-    결빙관측 관측회차 별 분석정보
+    일곡사거리(일곡지구)~조선대입구(동구청) 결빙관측<br> 
+    관측회차 별 분석정보
     </h2>
     """
     st.markdown(header_text, unsafe_allow_html=True)
