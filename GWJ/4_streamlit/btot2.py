@@ -122,7 +122,7 @@ def create_graph(df1):
         font=dict(color='white', size=12))  # 글자색을 흰색으로 설정
 
     fig.update_layout(
-        title=dict(text='2월6일 일곡사거리~조선대입구 결빙rm 1차 관측 그래프<br>일몰시각 <07:34>, 관측시간<06:47 ~ 07:16>', x=0, font=dict(size=24, color="black", family="Arial Black"), xanchor='left',),
+        title=dict(text='2월26일 일곡사거리~조선대입구 노면결빙 1차 관측 그래프<br>일몰시각 <07:34>, 관측시간<06:47 ~ 07:16>', x=0, font=dict(size=24, color="black", family="Arial Black"), xanchor='left',),
         xaxis=dict(
             title='날짜와 시간',
             range=[df1['시간'].min(), df1['시간'].max()],  # 데이터에서 최소 및 최대 시간으로 범위 설정
@@ -289,7 +289,7 @@ def create_graph(df2):
 
 
     fig.update_layout(
-        title=dict(text='2월7일 첨단-극락교 구간 노면 2차관측 그래프<br>일몰시각 <07:27>, 관측시간<06:14 ~ 06:41>', x=0, font=dict(size=24, color="black", family="Arial Black"), xanchor='left',),
+        title=dict(text='2월27일 일곡사거리~조선대입구 노면결빙 2차 관측 그래프<br>일몰시각 <07:27>, 관측시간<06:14 ~ 06:41>', x=0, font=dict(size=24, color="black", family="Arial Black"), xanchor='left',),
         xaxis=dict(
             title='날짜와 시간',
             range=[df2['시간'].min(), df2['시간'].max()],  # 데이터에서 최소 및 최대 시간으로 범위 설정
