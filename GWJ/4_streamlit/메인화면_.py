@@ -35,12 +35,19 @@ if sig_area == '구간A)첨단(과기원)-극락교(송정)':
     header_text = '<구간A> 광주광역시 첨단(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보'
 else:
     header_text = """
+<style>
+h2 {
+    border-bottom: 5px solid linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    display: inline-block;
+}
+</style>
 <h2>
 <구간B><br>
-일곡사거리(일곡지구)~조선대입구(동구청)<br> 
+일곡사거리(일곡지구)~조선대입구(동구청)<br>
 결빙관측 관측회차 별 분석정보
 </h2>
 """
+
     st.markdown(header_text, unsafe_allow_html=True)
 
 # Display the header
