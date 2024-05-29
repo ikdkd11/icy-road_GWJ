@@ -43,7 +43,7 @@ else:
     st.markdown(header_text, unsafe_allow_html=True)
 
 # Display the header
-st.header(header_text, divider='rainbow')
+#st.header(header_text, divider='rainbow')
 
 # Your existing code for grp1, grp2, mapm1, mapm2
 #송정 관측 시각화
