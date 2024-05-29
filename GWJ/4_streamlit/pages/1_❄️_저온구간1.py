@@ -25,7 +25,7 @@ import tta
 sig_list = ['구간A)첨단지구(과기원)-극락교(송정)', '구간B)일곡사거리~조선대입구']
 
 # Sidebar selection for the route
-option = st.sidebar.selectbox("관측경로 선택", sig_list)
+option = st.sidebar.selectbox("관측구간(A, B) 선택", sig_list)
 sig_area = option
 # Define the header text based on the selected route
 if sig_area == '구간A)첨단지구(과기원)-극락교(송정)':

@@ -28,7 +28,7 @@ st.set_page_config(
 sig_list = ['구간A)첨단지구(과기원)-극락교(송정)', '구간B)일곡사거리~조선대입구']
 
 # Sidebar selection for the route
-sig_area = st.sidebar.selectbox("관측경로 선택", sig_list)
+sig_area = st.sidebar.selectbox("관측구간(A, B) 선택", sig_list)
 
 # Define the header text based on the selected route
 if sig_area == '구간A)첨단지구(과기원)-극락교(송정)':

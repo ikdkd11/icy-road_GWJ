@@ -1,5 +1,4 @@
 #첨단 구간 전체 관측경로에 대한 노면온도 지도 생성 기능
-
 import folium
 import pandas as pd
 import branca.colormap as cm
