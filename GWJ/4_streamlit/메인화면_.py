@@ -32,7 +32,8 @@ mmap2 = mapp_main.mapm2
 
 sig_list = ['첨단-극락교','북구-서구']
 sig_area = st.sidebar.selectbox(
-    "관측경로 선택"
+    "관측경로 선택",
+    sig_list
 )
 tab1, tab2 = st.tabs(["1차 관측", "2차 관측"])
 with tab1:
