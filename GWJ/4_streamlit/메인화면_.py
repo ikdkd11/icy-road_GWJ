@@ -5,9 +5,7 @@ import glob
 import plotly.express as px
 import plotly.graph_objects as go
 import folium
-# import folium
 import json
-# import math
 import tot2
 import plotbox
 import streamlit as st
@@ -23,18 +21,31 @@ st.set_page_config(
     page_icon="🏡",
     layout="wide",
     initial_sidebar_state="expanded"
-)#fd
-st.header('2024년 광주광역시 첨단(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보', divider='rainbow') 
+)
+
+# Define the route options
+sig_list = ['첨단(과기원)-극락교(송정)', '일곡사거리(일곡지구)~조선대입구(동구청)']
+
+# Sidebar selection for the route
+sig_area = st.sidebar.selectbox("관측경로 선택", sig_list)
+
+# Define the header text based on the selected route
+if sig_area == '첨단(과기원)-극락교(송정)':
+    header_text = '2024년 광주광역시 첨단(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보'
+else:
+    header_text = '2024년 광주광역시 일곡사거리(일곡지구)~조선대입구(동구청) 결빙관측 관측회차 별 분석정보'
+    
+# Display the header
+st.header(header_text, divider='rainbow')
+
+# Your existing code for grp1, grp2, mapm1, mapm2
 grpp1 = tot2.grp1
 grpp2 = tot2.grp2
 mmap1 = mapp_main.mapm1
 mmap2 = mapp_main.mapm2
 
-sig_list = ['첨단(과기원)-극락교(송정)','일곡사거리(일곡지구)~조선대입구(동구청)']
-sig_area = st.sidebar.selectbox(
-    "관측경로 선택",
-    sig_list
-)
+# The rest of your Streamlit code goes here
+
 tab1, tab2 = st.tabs(["1차 관측", "2차 관측"])
 with tab1:
 # 첫 번째 차트
