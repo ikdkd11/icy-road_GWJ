@@ -30,7 +30,7 @@ grpp2 = tot2.grp2
 mmap1 = mapp_main.mapm1
 mmap2 = mapp_main.mapm2
 
-sig_list = ['첨단-극락교','북구-서구']
+sig_list = ['첨단(과기원)-극락교(송정)','북구-서구']
 sig_area = st.sidebar.selectbox(
     "관측경로 선택",
     sig_list
