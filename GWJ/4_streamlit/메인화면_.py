@@ -41,7 +41,7 @@ else:
 결빙관측 관측회차 별 분석정보
 </h2>
 """
-    st.markdown(header_text, unsafe_allow_html=True, divider='rainbow')
+    st.markdown(header_text, unsafe_allow_html=True)
 
 # Display the header
 #st.header(header_text, divider='rainbow')
