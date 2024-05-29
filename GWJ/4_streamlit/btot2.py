@@ -317,5 +317,3 @@ def create_graph(df2):
     fig.update_traces(hoverlabel=dict(font=dict(size=23)))
     return fig
 grp2 = create_graph(df2)    
-grp1.show()
-grp2.show()
