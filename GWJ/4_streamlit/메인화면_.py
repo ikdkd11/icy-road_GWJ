@@ -34,7 +34,7 @@ sig_area = st.sidebar.selectbox("관측경로 선택", sig_list)
 if sig_area == '구간A)첨단지구(과기원)-극락교(송정)':
     header_text = """
                 <h2>
-                첨단지구(과기원)~극락교(송정) 결빙관측 - <관측구간 A><br>
+                첨단지구(과기원)~극락교(송정) 결빙관측 - :red[<관측구간 A>]<br>
                 관측회차 별 분석정보
                 </h2>
                 """
