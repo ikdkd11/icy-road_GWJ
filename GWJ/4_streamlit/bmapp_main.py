@@ -8,10 +8,10 @@ import plotly.graph_objects as go
 
 # 데이터 불러오기
 url1 = (
-    "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%B2%A8%EB%8B%A8%EA%B7%B9%EB%9D%BD%EA%B5%90%EA%B5%AC%EA%B0%84%201%EC%B0%A8.csv"
+    "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/bukgu/b1stall.csv"
 )
 url2 = (
-    "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%B2%A8%EB%8B%A8%EA%B7%B9%EB%9D%BD%EA%B5%90%EA%B5%AC%EA%B0%84%202%EC%B0%A8.csv"
+    "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/bukgu/b2ndall.csv"
 )
 
 df1 = pd.read_csv(url1)
