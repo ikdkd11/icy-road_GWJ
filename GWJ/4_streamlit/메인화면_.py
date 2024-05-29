@@ -25,16 +25,17 @@ st.set_page_config(
 )
 
 # Define the route options
-sig_list = ['구간A)첨단(과기원)-극락교(송정)', '구간B)일곡사거리~조선대입구']
+sig_list = ['구간A)첨단지구(과기원)-극락교(송정)', '구간B)일곡사거리~조선대입구']
 
 # Sidebar selection for the route
 sig_area = st.sidebar.selectbox("관측경로 선택", sig_list)
 
 # Define the header text based on the selected route
-if sig_area == '구간A)첨단(과기원)-극락교(송정)':
+if sig_area == '구간A)첨단지구(과기원)-극락교(송정)':
     header_text = """
                 <h2>
-                <구간A> 광주광역시 첨단(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보
+                <구간A><br>
+                첨단지구(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보
                 </h2>
                 """
     st.markdown(header_text, unsafe_allow_html=True)
