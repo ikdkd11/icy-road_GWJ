@@ -37,7 +37,7 @@ else:
     header_text = """
 <h2>
 <구간B> 광주광역시 일곡사거리(일곡지구)~조선대입구(동구청)<br>
-결빙관측 관측회차 별 분석정보
+       결빙관측 관측회차 별 분석정보
 </h2>
 """
     st.markdown(header_text, unsafe_allow_html=True)
