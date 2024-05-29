@@ -34,7 +34,8 @@ if sig_area == '첨단(과기원)-극락교(송정)':
     header_text = '2024년 광주광역시 첨단(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보'
 else:
     header_text = '2024년 광주광역시 일곡사거리(일곡지구)~조선대입구(동구청) 결빙관측 관측회차 별 분석정보'
-    
+
+
 # Display the header
 st.header(header_text, divider='rainbow')
 
