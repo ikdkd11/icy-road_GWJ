@@ -69,7 +69,7 @@ bgrpp2 = btot2.grp2
 # The rest of your Streamlit code goes here
 
 tab1, tab2 = st.tabs(["1차 관측", "2차 관측"])
-if sig_area == '첨단(과기원)-극락교(송정)':
+if sig_area == '구간A)첨단지구(과기원)-극락교(송정)':
     with tab1:
     # 첫 번째 차트
         st.subheader('1월 28일 17시 발표 : 예보 중점 사항')
