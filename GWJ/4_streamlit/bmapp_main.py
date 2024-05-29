@@ -32,7 +32,7 @@ def create_graph(df1):
         lon=df1["경도"],
         mode='markers',
         marker=go.scattermapbox.Marker(
-            size=15,
+            size=10,
             color=df1["노면온도"],
             colorscale="Rainbow",
             cmin=df1["노면온도"].min(),
@@ -51,7 +51,7 @@ def create_graph(df1):
         showlegend=False,
     )
     return fig
-mapm1 = create_graph(df1)
+bmapm1 = create_graph(df1)
 
 def create_graph(df2):
     fig = go.Figure(go.Scattermapbox(
@@ -59,7 +59,7 @@ def create_graph(df2):
         lon=df2["경도"],
         mode='markers',
         marker=go.scattermapbox.Marker(
-            size=15,
+            size=10,
             color=df2["노면온도"],
             colorscale="Rainbow",
             cmin=df2["노면온도"].min(),
@@ -78,5 +78,4 @@ def create_graph(df2):
         showlegend=False,
     )
     return fig
-mapm2 = create_graph(df2)
-mapm1.show()
+bmapm2 = create_graph(df2)
