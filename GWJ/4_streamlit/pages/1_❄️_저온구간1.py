@@ -71,13 +71,13 @@ if sig_area == '첨단(과기원)-극락교(송정)':
             # map1은 사전에 정의한 지도 객체
             # 예: map1 = folium.Map(location=[45.372, -121.6972], zoom_start=12, tiles="Stamen Terrain")
             #st.map(map1)  # 'map1'을 미리 정의하고 해당 객체를 여기에 표시
-    st.subheader('저온구간1(하남교) 관측회차 별 시계열 그래프 및 박스그림                                                                               ')
+        st.subheader('저온구간1(하남교) 관측회차 별 시계열 그래프 및 박스그림                                                                               ')
     col1, col2 = st.columns([1,1])
     col1.plotly_chart(grph, use_container_width = True)
     with col2:
         tab1, tab2, tab3 = st.tabs(["Table", "Graph1", "Graph2"])
         with tab1:
-        st.subheader('하남교 저온구간 및 일반구간 노면온도 비교')
+            st.subheader('하남교 저온구간 및 일반구간 노면온도 비교')
         st.table(table2.head(5))
         with tab2:
             st.plotly_chart(grbp22, use_container_width=True)
