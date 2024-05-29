@@ -25,13 +25,13 @@ st.set_page_config(
 )
 
 # Define the route options
-sig_list = ['첨단(과기원)-극락교(송정)', '일곡사거리(일곡지구)~조선대입구(동구청)']
+sig_list = ['구간A)첨단(과기원)-극락교(송정)', '구간B)일곡사거리~조선대입구']
 
 # Sidebar selection for the route
 sig_area = st.sidebar.selectbox("관측경로 선택", sig_list)
 
 # Define the header text based on the selected route
-if sig_area == '첨단(과기원)-극락교(송정)':
+if sig_area == '구간A)첨단(과기원)-극락교(송정)':
     header_text = '2024년 광주광역시 첨단(과기원)~극락교(송정) 결빙관측 관측회차 별 분석정보'
 else:
     header_text = '2024년 광주광역시 일곡사거리(일곡지구)~조선대입구(동구청) 결빙관측 관측회차 별 분석정보'
