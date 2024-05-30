@@ -52,12 +52,43 @@ def create_graph(df11_cleaned):
             connectgaps=True
         ))
 
+    ##그래프에 도로 구간정보 주석으로 삽입
+    # x=40 보성교에 1차 관측 주석 추가
+    fig.add_annotation(
+        x=40,  # 주석을 달고 싶은 x축 좌표 위치
+        y=df11_cleaned.loc[df11_cleaned.index == 40, '노면온도(1차)'].values[0],  # 예시로 1차 노면온도 사용
+        text='초당교(초당교차로)(1차)',  # 주석에 표시될 텍스트
+        showarrow=True,  # 화살표 표시 여부
+        arrowhead=3,  # 화살표 머리 스타일
+        ax=90,  # 화살표의 x축 방향 길이 (음수 값 사용하여 왼쪽으로 이동)
+        ay=-20,  # 화살표의 y축 방향 길이 (음수 값 사용하여 위로 이동)
+        arrowwidth=2,  # 화살표 선 굵기
+        arrowsize=1,  # 화살표 크기
+        bgcolor='rgba(0, 0, 0, 0.8)',  # 배경색
+        font=dict(color='white', size=14)  # 글자색 및 크기 설정
+    )
+    # x=40 보성교에 2차 관측 주석 추가
+    fig.add_annotation(
+        x=40,  # 주석을 달고 싶은 x축 좌표 위치
+        y=df11_cleaned.loc[df11_cleaned.index == 40, '노면온도(2차)'].values[0],  # 예시로 1차 노면온도 사용
+        text='초당교(초당교차로)(2~4차)',  # 주석에 표시될 텍스트
+        showarrow=True,  # 화살표 표시 여부
+        arrowhead=3,  # 화살표 머리 스타일
+        ax=-90,  # 화살표의 x축 방향 길이 (음수 값 사용하여 왼쪽으로 이동)
+        ay=-35,  # 화살표의 y축 방향 길이 (음수 값 사용하여 위로 이동)
+        arrowwidth=2,  # 화살표 선 굵기
+        arrowsize=1,  # 화살표 크기
+        bgcolor='rgba(0, 0, 0, 0.8)',  # 배경색
+        font=dict(color='white', size=14)  # 글자색 및 크기 설정
+    )
+
     # 그래프 레이아웃 설정
     fig.update_layout(
         title=dict(
             text='위험구간1: [초당교] - 관측 회차 별 노면온도 시계열 비교',
             font=dict(size=20, color="black")  # 볼드 폰트로 변경
         ),
+        xaxis=dict(title='방향 : 보성 > 광양'),
         yaxis=dict(title='온도(°C)'),
         hovermode="x"
     )
