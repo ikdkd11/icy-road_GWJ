@@ -20,9 +20,8 @@ import mapp2
 import tta
 
 # CSS를 이용하여 우측 상단에 텍스트를 고정시키는 HTML 코드
-
 st.header('저온구간 다섯번째 - 극락교', divider='rainbow')    
-st.subheader('총 길이 380m, 총 너비 35m, 교량높이 8m')
+st.subheader('결빙취약구간 광산구4~서구1에 해당')
 st.write('주소: 광주광역시 광산구 신촌동')
 map5_1 = mapp1.map15
 map5_2 = mapp2.map25
@@ -46,7 +45,7 @@ image1 = Image.open(BytesIO(response.content))
 with col2:
     if option == '저온구간5(극락교) 전경':
         st.image(image_url)  # 해당 이미지 파일의 경로
-        st.markdown('결빙취약구간 광산구4~서구1에 해당')
+        
     elif option == '지도 시각화(1차 관측)':
         col2.plotly_chart(map5_1, height = 1080, use_container_width = True)
     elif option == '지도 시각화(2차 관측)':
