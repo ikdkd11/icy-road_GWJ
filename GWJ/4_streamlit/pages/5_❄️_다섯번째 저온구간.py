@@ -46,6 +46,7 @@ image1 = Image.open(BytesIO(response.content))
 with col2:
     if option == '저온구간5(극락교) 전경':
         st.image(image_url)  # 해당 이미지 파일의 경로
+        st.markdown('결빙취약구간 광산구4~서구1에 해당')
     elif option == '지도 시각화(1차 관측)':
         col2.plotly_chart(map5_1, height = 1080, use_container_width = True)
     elif option == '지도 시각화(2차 관측)':
