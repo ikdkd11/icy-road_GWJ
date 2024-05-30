@@ -21,7 +21,7 @@ import tta
 
 
 st.header('저온구간 세번째 - 남성저수지(용아로-금봉로)', divider='rainbow')    
-st.subheader('<남성저수지(광주광역시 경찰청) 주변 도로')
+st.subheader('<남성저수지(광주광역시 경찰청)> 주변 도로')
 st.write('주소: 광주광역시 용아로112(소촌동)')    
 
 map3_1 = mapp1.map13
