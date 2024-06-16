@@ -15,6 +15,7 @@ from PIL import Image
 import requests
 from io import BytesIO
 import tot3
+import btot
 import mapp1
 import mapp2
 import bmapp2
@@ -96,7 +97,7 @@ else:
 
     table2 = tta.average_temperatures1
     #1~5번째 위험지역 별 시계열 그래프
-    grph = tot3.grp11
+    grph = btot.grp11
 
     #1~5번째 위험지역 별 박스그림
     box11 = plotbox.box1
