@@ -6,11 +6,11 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # 데이터 불러오기
-url1 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/2ndD_1.csv"
-url2 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/3rdD_1.csv"
-url3 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/4thD_1.csv"
-url4 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/5thD_1.csv"
-url5 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/6thD_1.csv"
+url1 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/bukgu/1stB_1_Sheet1.csv"
+url2 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/bukgu/2ndB_1_Sheet1.csv"
+url3 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/bukgu/3rdB_1_Sheet1.csv"
+url4 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/bukgu/4thB_1_Sheet1.csv"
+url5 = "https://raw.githubusercontent.com/ikdkd11/icy-road_GWJ/main/GWJ/0_data/bukgu/5thB_1_Sheet1.csv"
 
 df1 = pd.read_csv(url1)
 df2 = pd.read_csv(url2)
