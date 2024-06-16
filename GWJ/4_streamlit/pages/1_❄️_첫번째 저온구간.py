@@ -97,7 +97,7 @@ else:
 
     table2 = tta.average_temperatures1
     #1~5번째 위험지역 별 시계열 그래프
-    grph = btot.grp11
+    bgrph = btot.grp11
 
     #1~5번째 위험지역 별 박스그림
     box11 = plotbox.box1
@@ -130,7 +130,7 @@ else:
             #st.map(map1)  # 'map1'을 미리 정의하고 해당 객체를 여기에 표시
         st.subheader('구간B)첫번째 저온구간- 국립광주박물관(서광주IC) 관측회차 별 시계열 그래프 및 박스그림                                                                               ')
     col1, col2 = st.columns([1,1])
-    col1.plotly_chart(grph, use_container_width = True)
+    col1.plotly_chart(bgrph, use_container_width = True)
     with col2:
         tab1, tab2, tab3 = st.tabs(["Table", "Graph1", "Graph2"])
         with tab1:
