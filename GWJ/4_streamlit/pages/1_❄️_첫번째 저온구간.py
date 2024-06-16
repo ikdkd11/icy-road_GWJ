@@ -17,6 +17,8 @@ from io import BytesIO
 import tot3
 import mapp1
 import mapp2
+import bmapp2
+import bmapp1
 import tta
 
 # CSS를 이용하여 우측 상단에 텍스트를 고정시키는 HTML 코드
@@ -91,8 +93,8 @@ else:
     grbp22 = tta.grbp1
 
     #1차 위험지역 지도 시각화 자료 호출
-    map1_1 = mapp1.map11
-    map1_2 = mapp2.map21
+    bmap1_1 = bmapp1.map11
+    bmap1_2 = bmapp2.map21
 
     table2 = tta.average_temperatures1
     #1~5번째 위험지역 별 시계열 그래프
@@ -121,9 +123,9 @@ else:
         if option == '하남교 측면 사진':
             st.image(image_url3)  # 해당 이미지 파일의 경로
         elif option == '지도 시각화(1차 관측)':
-            col2.plotly_chart(map1_1, height = 1080, use_container_width = True)
+            col2.plotly_chart(bmap1_1, height = 1080, use_container_width = True)
         elif option == '지도 시각화(2차 관측)':
-            col2.plotly_chart(map1_2, height = 1080, use_container_width = True)
+            col2.plotly_chart(bmap1_2, height = 1080, use_container_width = True)
             # map1은 사전에 정의한 지도 객체
             # 예: map1 = folium.Map(location=[45.372, -121.6972], zoom_start=12, tiles="Stamen Terrain")
             #st.map(map1)  # 'map1'을 미리 정의하고 해당 객체를 여기에 표시
