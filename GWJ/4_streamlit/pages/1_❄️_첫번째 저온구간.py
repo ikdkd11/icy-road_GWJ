@@ -87,9 +87,7 @@ if sig_area == '구간A)첨단지구(과기원)-극락교(송정)':
             st.plotly_chart(box11, use_container_width=True)
 
 else:
-    st.header('구간B) 첫번째 저온구간  -  운암고가', divider='rainbow')
-    st.subheader('<하남교> 총 길이 80m, 총 폭 39m, 높이 4.6m')
-    st.write('주소: 광주광역시 광산구 장덕동, 도천동')    
+    st.header('구간B) 첫번째 저온구간  -  국립광주박물관(서광주IC)', divider='rainbow')
     grbp22 = tta.grbp1
 
     #1차 위험지역 지도 시각화 자료 호출
@@ -107,7 +105,7 @@ else:
     with col1:
         option = st.selectbox('표시 이미지 선택:',
                     [
-                    '하남교 측면 사진',
+                    '최저 노면온도 관측구간 전경',
                     '지도 시각화(1차 관측)',
                     '지도 시각화(2차 관측)'
                     ])
