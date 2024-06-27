@@ -65,7 +65,7 @@ def create_graph(df11_cleaned):
 grp11 = create_graph(df11_cleaned)
 
 # NaN 값을 가진 행 제거
-
+print(df22)
 def create_graph(df22):
     fig = go.Figure()
     # 기온 데이터 색상 (빨간색 계열)
@@ -96,7 +96,7 @@ def create_graph(df22):
     )
     return fig
 grp22 = create_graph(df22)
-
+grp22.show()
 
 # NaN 값을 가진 행 제거
 
