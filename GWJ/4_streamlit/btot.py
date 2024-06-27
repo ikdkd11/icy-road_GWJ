@@ -199,3 +199,4 @@ def create_graph(df55_cleaned):
     )
     return fig
 grp55 = create_graph(df55_cleaned)
+grp55.show()
