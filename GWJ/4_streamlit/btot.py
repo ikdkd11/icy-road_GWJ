@@ -101,7 +101,8 @@ grp22 = create_graph(df22)
 # NaN 값을 가진 행 제거
 
 # plotly를 사용하여 그래프 그리기
-def create_graph(df33):
+df33_cleaned = df33.dropna()
+def create_graph(df33_cleaned):
     fig = go.Figure()
 
     # 기온 데이터 색상 (빨간색 계열)
@@ -132,8 +133,8 @@ def create_graph(df33):
     hovermode="x"
     )
     return fig
-grp33 = create_graph(df33)
-
+grp33 = create_graph(df33_cleaned)
+grp33.show()
 #4번째 저온구간
 df44_cleaned = df44.dropna()
 def create_graph(df44_cleaned):
@@ -166,7 +167,6 @@ def create_graph(df44_cleaned):
     )
     return fig
 grp44 = create_graph(df44_cleaned)
-grp44.show()
 
 #5차 관측
 df55_cleaned = df55.dropna()
