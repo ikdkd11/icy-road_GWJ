@@ -173,21 +173,6 @@ df55_cleaned = df55.dropna()
 def create_graph(df55_cleaned):
     fig = go.Figure()
 
-# x=19 성황본교 위치에 주석 추가
-    fig.add_annotation(
-        x=19,  # 주석을 달고 싶은 x축 좌표 위치
-        y=df55_cleaned.loc[df55_cleaned.index == 19, '노면온도(1차)'].values[0],  # 예시로 1차 노면온도 사용
-        text='성황본교',  # 주석에 표시될 텍스트
-        showarrow=True,  # 화살표 표시 여부
-        arrowhead=3,  # 화살표 머리 스타일
-        ax=-20,  # 화살표의 x축 방향 길이 (음수 값 사용하여 왼쪽으로 이동)
-        ay=-30,  # 화살표의 y축 방향 길이 (음수 값 사용하여 위로 이동)
-        arrowwidth=2,  # 화살표 선 굵기
-        arrowsize=1,  # 화살표 크기
-        bgcolor='rgba(0, 0, 0, 0.8)',  # 배경색
-        font=dict(color='white', size=14)  # 글자색 및 크기 설정
-    )
-
     # 노면온도 데이터 색상 (파란색 계열)
     road_temp_colors = [' rgb(204, 37, 41)', 'rgb(0, 158, 115)', 'rgb(255, 128, 0)', 'rgb(0, 114, 178)']
 
@@ -214,3 +199,4 @@ def create_graph(df55_cleaned):
     )
     return fig
 grp55 = create_graph(df55_cleaned)
+grp55.show()
