@@ -84,7 +84,7 @@ else:
 
     table2 = tta.average_temperatures1
     #1~5번째 위험지역 별 시계열 그래프
-    bgrph = btot.grp11
+    bgrph = btot.grp22
 
     #1~5번째 위험지역 별 박스그림
     box11 = plotbox.box1
